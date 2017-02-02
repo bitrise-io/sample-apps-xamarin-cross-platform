@@ -1,10 +1,7 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
 using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.iOS;
-using Xamarin.UITest.Queries;
 
 namespace Multiplatform.iOS.UITest
 {
@@ -18,7 +15,7 @@ namespace Multiplatform.iOS.UITest
 		{
 			string appBundlePath = Environment.GetEnvironmentVariable("APP_BUNDLE_PATH");
 
-			if (appBundlePath != null && appBundlePath != "")
+			if (!string.IsNullOrEmpty(appBundlePath))
 			{
 				// In case of Bitrise step: steps-xamarin-ios-uitest.
 				app = ConfigureApp
