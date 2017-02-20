@@ -15,12 +15,41 @@ workflows:
     - git-clone:
     - certificate-and-profile-installer:
     - nuget-restore:
-    - xamarin-archive:
-        inputs:
-        - project_type_whitelist: ios
     - xamarin-ios-test:
         inputs:
         - test_to_run: $TEST_TO_RUN
+
+  android-uitest:
+    envs:
+    - BITRISE_XAMARIN_CONFIGURATION: Release
+    - BITRISE_XAMARIN_PLATFORM: Any CPU
+    - TEST_TO_RUN: Multiplatform.UItest.Tests(Android)
+    - BITRISE_EMULATOR_NAME: Nexus_4_API_23
+    steps:
+    - create-android-emulator:
+        run_if: .IsCI
+        inputs:
+        - name: "Emulator"
+    - start-android-emulator:
+        inputs:
+        - emulator_options: -no-boot-anim
+        - skin: "768x1280"
+        - wait_for_boot: "false"
+    - git-clone:
+    - certificate-and-profile-installer:
+    - nuget-restore:
+    - wait-for-android-emulator:
+    - xamarin-android-test:
+        inputs:
+        - test_to_run: $TEST_TO_RUN
+    - script:
+        title: "Kill running emulators"
+        is_always_run: true
+        inputs:
+        - content: 
+            #!/bin/bash
+            set -ex
+            adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill; done
 
   calabash:
     envs:

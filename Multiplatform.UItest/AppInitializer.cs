@@ -18,6 +18,12 @@ namespace Multiplatform.UItest
 					androidConfigurator.ApkFile(apkPath);
 				}
 
+				string emulatorSerial = Environment.GetEnvironmentVariable("BITRISE_EMULATOR_SERIAL");
+				if (!string.IsNullOrEmpty(emulatorSerial))
+				{
+					androidConfigurator.DeviceSerial(emulatorSerial);
+				}
+
 				return androidConfigurator.StartApp();
 			}
 
