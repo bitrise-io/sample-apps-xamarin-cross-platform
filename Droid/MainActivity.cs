@@ -17,6 +17,9 @@ namespace Multiplatform.Droid
 
 			Button button = FindViewById<Button>(Resource.Id.myButton);
 			button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+#if __TESTDEF__
+			NSUrlSessionHandler
+#endif
 		}
 	}
 }
