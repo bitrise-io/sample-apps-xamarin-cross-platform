@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplatform.Droid", "Droi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplatform.iOS", "iOS\Multiplatform.iOS.csproj", "{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplatform.Mac", "Mac\Multiplatform.Mac.csproj", "{FB9C0726-AC54-4B01-9130-1D0B417EEE39}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplatform.xUnit", "Multiplatform.xUnit\Multiplatform.xUnit.csproj", "{15C0857E-BACD-43CF-A0A8-8B24FF4D93D7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplatform.UItest", "Multiplatform.UItest\Multiplatform.UItest.csproj", "{D0586CDC-8BA7-42C8-840A-6E8317ECB833}"
@@ -54,19 +52,6 @@ Global
 		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.Debug|iPhone.Build.0 = Debug|iPhone
 		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.calabash|Any CPU.ActiveCfg = Debug|iPhoneSimulator
 		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.calabash|Any CPU.Build.0 = Debug|iPhoneSimulator
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Release|iPhone.Build.0 = Release|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{FB9C0726-AC54-4B01-9130-1D0B417EEE39}.calabash|Any CPU.ActiveCfg = Debug|Any CPU
 		{15C0857E-BACD-43CF-A0A8-8B24FF4D93D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{15C0857E-BACD-43CF-A0A8-8B24FF4D93D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15C0857E-BACD-43CF-A0A8-8B24FF4D93D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
